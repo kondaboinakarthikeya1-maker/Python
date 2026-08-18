@@ -1,9 +1,12 @@
-n = int(input("Enter a number : "))
-total = 0
-count = 0
-for i in range(1,n+1):
-    if i % 2 == 0:
-        total = total + i
-        count = count + 1
-print("total : ",total)
-print("Count : ",count)
+n = int(input("Enter how many numbers : "))
+first = int(input("Enter a number : "))
+smallest = first
+largest = first
+for i in range(1,n):
+    num = int(input("Enter a number : "))
+    if num < smallest:
+        smallest = num
+    if num > largest:
+        largest = num
+print(smallest)
+print(largest)

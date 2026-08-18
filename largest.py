@@ -1,7 +1,7 @@
 n = int(input("enter numbers how many numbers : "))
-largest = 0
-for i in range(1,n+1):
+largest = int(input())
+for i in range(n):
     num = int(input("Enter a number : "))
-    if num > largest:
+    if num < largest:
         largest = num
 print(largest)
